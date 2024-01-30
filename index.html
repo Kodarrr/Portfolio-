@@ -21,5 +21,50 @@
             </nav>
         </div>
     </div>
+
+            <!-- about section -->
+            
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">
+                        About
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus, vero libero aperiam saepe odio molestias sequi repellat eius qui nulla, inventore repudiandae quia laboriosam voluptas eos tenetur placeat beatae Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias accusantium molestiae asperiores distinctio amet ab iste rerum fugiat aliquam ipsum, provident natus. Quas numquam unde molestias corrupti eveniet, iusto perferendis.
+                    Est fuga quis repellat debitis aliquam aut nesciunt neque itaque praesentium doloribus, in dolor consectetur modi. Sit, deleniti earum soluta assumenda cumque repudiandae, explicabo et, voluptatum ipsam architecto aliquam repellendus.
+                    Sed debitis, obcaecati optio magnam repellat, commodi et labore modi perspiciatis enim consequatur neque dignissimos sapiente. Distinctio corporis sequi perferendis dolore dignissimos, officia, est suscipit explicabo, necessitatibus perspiciatis tempore nihil!
+                    Eum sequi magnam maiores adipisci, praesentium velit ducimus quis unde itaque necessitatibus non quam recusandae, labore repudiandae qui placeat id impedit. Eligendi consequuntur nemo autem placeat reprehenderit labore explicabo accusamus.
+                    Adipisci ullam asperiores numquam eum dolore maiores magnam praesentium nobis nulla quisquam, labore aperiam officia nesciunt amet? Explicabo fugit id quos! Doloribus dolor tempore iure eius ab cum sapiente quas.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX<br>designing web or app interfaces</span></li>
+                            <li><span>App development<br>designing web app </span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+        }
+
+    </script>
 </body>
 </html>
